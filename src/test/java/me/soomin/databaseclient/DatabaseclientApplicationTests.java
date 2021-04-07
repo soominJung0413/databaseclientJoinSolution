@@ -33,13 +33,7 @@ class DatabaseclientApplicationTests {
         //Account(id=3, username=admin1234, password=1234, roleId=null, role=Role{id=1, name='ADMIN'})
         System.out.println(account);
 
-        account.setId(null);
-        account.setUsername("user1234");
-        account.getRole().setName("USER");
 
-        Boolean result = accountRepository.insertEntityWithRole(account).block();
-
-        System.out.println(">>>>>>>>>>>>>>>>"+result);
     }
 
 }
